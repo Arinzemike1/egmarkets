@@ -37,21 +37,11 @@ const Blogs = () => {
   return (
     <>
       <div className="row mt-4">
-        {!loading ? (
-          data.blogs.map((blog) => {
-            return (
-              <>
-                <BlogCard
-                  key={blog.id}
-                  blog={blog}
-                  // imageIds={imageIds && imageIds}
-                />
-              </>
-            );
-          })
-        ) : (
-          <p>No Blog Posts</p>
-        )}
+          {
+            !loading ? data.blogs.map((blog) => {
+              return <BlogCard key={blog.id} blog={blog} />
+            }) : <p>No Blog Posts</p>
+          }
       </div>
     </>
   );

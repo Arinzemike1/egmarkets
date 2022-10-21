@@ -34,17 +34,17 @@ const AddBlogModal = ({ imageIds }) => {
     },
   });
 
-  const uploadImage = async (base64EncodedImage) => {
-    try {
-      await fetch("http://localhost:5000/api/upload", {
-        method: "POST",
-        body: JSON.stringify({ data: base64EncodedImage }),
-        headers: { "Content-type": "application/json" },
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const uploadImage = async (base64EncodedImage) => {
+  //   try {
+  //     await fetch("http://localhost:5000/api/upload", {
+  //       method: "POST",
+  //       body: JSON.stringify({ data: base64EncodedImage }),
+  //       headers: { "Content-type": "application/json" },
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -58,19 +58,19 @@ const AddBlogModal = ({ imageIds }) => {
     }
   };
 
-  const previewImage = (file) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    // reader.onloadend = () => {
-    //   setPreviewSource(reader.result);
-    // };
-  };
+  // const previewImage = (file) => {
+  //   const reader = new FileReader();
+  //   reader.readAsDataURL(file);
+  //   reader.onloadend = () => {
+  //     setPreviewSource(reader.result);
+  //   };
+  // };
 
-  const handleFileInput = (e) => {
-    const file = e.target.files[0];
-    previewImage(file);
-    // setImage(file);
-  };
+  // const handleFileInput = (e) => {
+  //   const file = e.target.files[0];
+  //   previewImage(file);
+  //   setImage(file);
+  // };
 
   return (
     <>
