@@ -1,4 +1,5 @@
 // import { Image } from "cloudinary-react";
+import backgroundImage from './assets/crypto-background.jpg';
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
@@ -8,7 +9,7 @@ const BlogCard = ({ blog }) => {
         <div className="card-body">
           <Link to={`/blog/${blog.id}`}>
             <img
-              src="https://www.eisneramper.com/globalassets/services/center-for-transformation/cryptocurrency-og.jpg"
+              src={backgroundImage}
               style={{ maxWidth: "100%" }}
               className="img-fluid"
               alt=""
