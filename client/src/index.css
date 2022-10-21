@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar-brand {
+  color: #df3ca6;
+}
+
+.navbar-brand img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-title {
+  color: #14233b;
+  font-size: 25px;
+}
+
+.card-description {
+  color: #879eb0;
+  font-weight: 500;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../public/forex-background.jpg");
+  height: 50vh;
+}
+
+.hero-image h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  font-size: 70px;
+}
+
+.btn {
+  font-size: 15px;
+  outline: none;
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: #005bfe !important;
+  outline: none;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #005bfe;
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #7430f9;
+}
+
+.btn-secondary:hover {
+  background-color: #7430f9;
+  opacity: 0.9;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+@media only screen and (max-device-width: 480px)  {
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../public/mobile-background.jpg");
+    height: 30vh;
+  }
+
+  .hero-image h1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    font-size: 40px;
+  }
+}
