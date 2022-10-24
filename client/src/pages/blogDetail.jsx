@@ -34,7 +34,7 @@ const BlogDetail = () => {
   return (
     <>
       {!loading && !error && (
-        <div className="mx-auto w-75 card p-5">
+        <div className="mx-auto w-75 card p-5 blog-detail">
           <Link
             to="/"
             className="btn btn-light btn-sm w-25 mb-5 d-inline ms-auto"
